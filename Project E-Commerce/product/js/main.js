@@ -183,6 +183,7 @@ function loadCartItems() {
       "$" + cartTotal;
   }
   updateCartIcon();
+  updateCheckoutButtonState()
 }
 
 // Jumlah di logo ikon cart
