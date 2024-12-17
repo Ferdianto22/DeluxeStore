@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 160px;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -350px 0;
+  animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.navbar {
+  background-color: #8594e4;
+}
+
+.nav-link {
+  margin-right: 15px;
+  transition: 0.6s;
+}
+
+.nav-link:hover {
+  color: #cadefc;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid #e42a1c;
+  background: #e42a1c;
+  transition: 1s;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+}
+
+/* -----------------------JENIS PRODUCT -------------------------*/
+
+#about {
+  background-color: #cadefc;
+  padding: 70px 0;
+}
+
+.product {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-col {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.product-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* -------------------Official Store------------------- */
+
+#officialStore {
+  background-color: #c0b8e6;
+  padding: 30px 0;
+}
+
+.officialStore {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.officialStore-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.officialStore-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(238, 0, 0, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* -------------------Best Selling------------------- */
+#bestSelling {
+  background: #bbe4e9;
+}
+.bestSelling {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.bestSelling-col img :nth-child(1) {
+  height: 60%;
+}
+
+.bestSelling-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.bestSelling-col {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bestSelling-col img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.bestSelling-col img:hover {
+  transform: scale(110%);
+}
+
+.bestSelling-col p {
+  padding: 0;
+}
+
+.bestSelling-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* -------------------TESTIMONI------------------- */
+
+#testimoni {
+  background-color: #d6a96e;
+  padding: 20px 0;
+}
+
+.testimoni {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimoni-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimoni-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimoni-col p {
+  padding: 0;
+}
+
+.testimoni-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .testimoni-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+
+/* -------------------- EXPLORE PRODUK------------------ */
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/background6.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}
+
+/*------------------Footer--------------------*/
+
+.footer p {
+  color: #fff;
+}
+
+.footer h3 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+#contactus {
+  background: #f0c383;
+  padding: 20px 0px 20px 0px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer-section .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    width: 90%; 
+  }
+  h3 {
+    font-size: 20px; 
+    line-height: 30px; 
+  }
+  .icons{
+    font-size: 60px;
+  }
+}

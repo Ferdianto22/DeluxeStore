@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selesaikan Pembayaran Anda</h1>
+      <div class="first-row">
+        <div class="namalengkap">
+          <h3>Nama Lengkap</h3>
+          <div class="input-field">
+            <input type="text" id="namaLengkap" required />
+          </div>
+        </div>
+        <div class="nomorpin">
+          <h3>Nomor Pin</h3>
+          <div class="input-field">
+            <input type="password" id="nomorPin" required />
+          </div>
+        </div>
+      </div>
+      <div class="second-row">
+        <div class="card-number">
+          <h3>Nomor Kartu</h3>
+          <div class="input-field">
+            <input type="text" id="nomorKartu" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="second-row">
+        <div class="card-number">
+          <h3>Alamat Lengkap</h3>
+          <div class="input-field">
+            <input type="text" id="alamatLengkap" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="third-row">
+        <h3>Tanggal Pembayaran</h3>
+        <div class="selection">
+          <div class="date">
+            <select name="days" id="days" required>
+              <option value="">Tanggal</option>
+              <!-- Option values -->
+              <script>
+                for (let i = 1; i <= 31; i++) {
+                  document.write(`<option value="${i}">${i}</option>`);
+                }
+              </script>
+            </select>
+            <select name="months" id="months" required>
+              <option value="">Bulan</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+          </div>
+          <div class="cards">
+            <img src="mc.png" alt="" />
+            <img src="vi.png" alt="" />
+            <img src="pp.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <a href="../success.html" id="confirmButton" class="disabled">Confirm</a>
+    </div>
+
+    <script>
+      function validateForm() {
+        const inputs = document.querySelectorAll(
+          "input[required], select[required]"
+        );
+        const confirmButton = document.getElementById("confirmButton");
+        let isValid = true;
+
+        inputs.forEach((input) => {
+          if (!input.value.trim()) {
+            isValid = false;
+          }
+        });
+
+        if (isValid) {
+          confirmButton.classList.remove("disabled");
+          confirmButton.removeAttribute("onclick");
+        } else {
+          confirmButton.classList.add("disabled");
+          confirmButton.setAttribute("onclick", "return false;");
+        }
+      }
+
+      const inputs = document.querySelectorAll(
+        "input[required], select[required]"
+      );
+      inputs.forEach((input) => {
+        input.addEventListener("input", validateForm);
+      });
+
+      validateForm();
+    </script>
+    </style>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Mengaitkan dengan boxicons(Website untuk mengambil logo) -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Mengaitkan dengan Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Mengaitkan file css -->
+    <link rel="stylesheet" href="Website.css" />
+
+    <!-- Mengaitkan file javascript -->
+    <script defer src="Website.js"></script>
+    <title>DeLuxeStore</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DeLuxeStore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto" style="margin-right: 90px">
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="product/index.html">PRODUCT</a>
+            <a class="nav-link" href="#contactus">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header">
+      <div class="text-box" id="home">
+        <h1 class="title">DeLuxeStore</h1>
+        <br />
+        <p>
+          Our store website is a place that facilitates our customers to shop
+          for quality products at affordable prices.
+        </p>
+        <a href="#about" class="button">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!------------------------JENIS PRODUCT-------------------------->
+    <div class="hidden" id="about">
+      <section class="product">
+        <h1>Product We Offer</h1>
+        <p>3 types of products that we offer to you.</p>
+
+        <div class="row">
+          <div class="product-col">
+            <h3>Clothes</h3>
+            <p>
+              From casual to formal styles, we offer a collection that meets
+              your fashion needs and preferences. Discover comfort, confidence,
+              and unparalleled style in every product we offer.
+            </p>
+          </div>
+
+          <div class="product-col">
+            <h3>Accessories</h3>
+            <p>
+              Accessories are the perfect complement to complete your style and
+              add a personal touch to your appearance. They are small details
+              that have the power to transform your look from ordinary to
+              extraordinary.
+            </p>
+          </div>
+
+          <div class="product-col">
+            <h3>Merchandise</h3>
+            <p>
+              Explore our amazing merchandise collection, offering unique and
+              high-quality products that will meet your needs and desires. From
+              practical items to special ones.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!----------------------- Official Store -------------------->
+    <div class="hidden" id="officialStore">
+      <section class="officialStore">
+        <h1>
+          Our Official Store <br />
+          Located at
+        </h1>
+        <p>
+          We have three official stores that you can visit directly, located at
+        </p>
+
+        <div class="row">
+          <div class="officialStore-col">
+            <img src="images/Monas.jpg" alt="" />
+            <div class="layer">
+              <h3>JAKARTA</h3>
+            </div>
+          </div>
+
+          <div class="officialStore-col">
+            <img src="images/Paris.jpg" alt="" />
+            <div class="layer">
+              <h3>PARIS</h3>
+            </div>
+          </div>
+
+          <div class="officialStore-col">
+            <img src="images/newyork.png" alt="" />
+            <div class="layer">
+              <h3>NEW YORK</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!------------------------ Best Selling ------------------------>
+    <div class="hidden" id="bestSelling">
+      <section class="bestSelling">
+        <h1>Our Best Selling Product</h1>
+        <p>
+          Our best-selling products are favorites among customers, offering
+          consistent quality and value.
+        </p>
+
+        <div class="row">
+          <div class="bestSelling-col">
+            <img src="images/2.png" alt="" />
+            <h3>MadnessMeld Hoodie</h3>
+            <p>
+              The Madnessmeld Hoodie presents a unique and spirited impression
+              for those seeking bold and distinct styles. With striking design
+              and outstanding comfort, this hoodie becomes the top choice to
+              express a strong and uncompromising personality
+            </p>
+          </div>
+
+          <div class="bestSelling-col">
+            <img src="images/1.png" alt="" />
+            <h3>Deluxe Dome</h3>
+            <p>
+              DeluxeDome offers the perfect combination of style and comfort.
+              With high-quality materials and elegant design, this cap adds a
+              luxurious touch to your appearance. Perfect for complementing your
+              casual or semi-formal style with a special touch
+            </p>
+          </div>
+
+          <div class="bestSelling-col">
+            <img src="images/3.png" alt="" />
+            <h3>Grandeur Tote</h3>
+            <p>
+              GrandeurTote is the perfect choice to add a touch of luxury to
+              your everyday style. Designed with elegant details and
+              high-quality materials, this tote bag is not only stylish but also
+              highly functional. You can easily carry all your essentials with
+              unmatched style.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!------------------------ TESTIMONI ------------------------>
+    <div class="hidden" id="testimoni">
+      <section class="testimoni">
+        <h1>Testimonials From Our Customers</h1>
+        <p>Here are testimonials from our customers at our store</p>
+
+        <div class="row">
+          <div class="testimoni-col">
+            <img src="images/user1.jpg" alt="" />
+            <div>
+              <p>
+                "The clothing, accessories, and merchandise available in this
+                store exude class and exceptional quality in every use."
+              </p>
+              <h3>Sarah</h3>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+
+          <div class="testimoni-col">
+            <img src="images/user2.jpg" alt="" />
+            <div>
+              <p>
+                "The clothing in this store not only presents trendy styles but
+                also provides maximum comfort throughout the day, making it the
+                best choice for my active lifestyle."
+              </p>
+              <h3>Dennis</h3>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ---------------- EXPLORE PRODUK ------------------ -->
+    <div class="hidden" id="explore">
+      <section class="cta">
+        <h1>Explore More Product</h1>
+        <a href="product/index.html" class="button">SEE OTHER PRODUCT</a>
+      </section>
+    </div>
+
+    <!-- ---------------- FOOTER ---------------- -->
+
+    <div id="contactus">
+      <div class="wrapper">
+          <div class="footer">
+              <div class="footer-section">
+                  <h3>DeluxeStore</h3>
+                  <p style="padding: 0;">"Redefine Your Style, Elevate Your Confidence!"
+                    Discover the latest trends in clothing and accessories that make you stand out. From timeless classics to bold statement pieces, we've got everything you need to express yourself.</p>
+              </div>
+              <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <p>If you have any questions or constructive criticism, please contact us via our social media channels below.</p>
+                  <div class="icons">
+                    <a
+                      href="https://www.instagram.com/deluxestore_sireg2b?igsh=MTR4NzJyczYwZnhmdg=="
+                      ><i class="bx bxl-instagram"></i
+                    ></a>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                 
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Maps</h3>
+                  <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63751.894127922074!2d104.6657292486328!3d-2.9605106999999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7530a637b133%3A0x4be4c3963f87c405!2sstore!5e0!3m2!1sid!2sid!4v1709703814544!5m2!1sid!2sid"
+            width="350"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+          
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
